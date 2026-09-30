@@ -1,0 +1,17 @@
+Baja mantenibilidad (Código frágil): Al copiar los atributos a mano, el método queda rígidamente acoplado a la estructura actual de Motor. Si en el futuro se le agrega un nuevo atributo a la clase Motor (por ejemplo, cilindrada), el programador tendrá que acordarse de ir a modificar también el clone() de Automovil. Si se olvida, los automóviles clonados nacerán con motores incompletos.   
+
+Pérdida de polimorfismo: Al instanciar explícitamente con new Motor(), estás forzando el tipo de clase. Si el automóvil original tuviera asignado un motor de una subclase (por ejemplo, un MotorElectrico que hereda de Motor), al clonarlo se transformaría en un Motor genérico, perdiendo todos sus atributos y comportamientos específicos. 
+
+En conclusion no respeta SOLID
+
+
+
+
+
+
+
+
+
+
+
+
